@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+        <script type="module" src="main.js"></script>
+	</head>
+	<body>
+		<div>
+			<canvas class="myCanvas" width="256" height="224"></canvas>
+		</div>
+
+		<div>
+			<input type="file" accept=".smc,.sfc">
+			<input type="button" value="reset" id="reset">
+			<input type="button" value="run" id="run">
+			<input type="button" value="pause" id="pause">
+		</div>
+
+		<div hidden>
+			<canvas class="myCanvasTilemap" width="256" height="224"></canvas>
+		</div>
+
+		<form id="tilemapBox" hidden>
+			<fieldset>
+				<legend>表示するタイルマップを選択してください。</legend>
+				<div>
+					<input type="radio" id="tilemapOFF" name="tilemap" value="tilemapOFF" checked />
+					<label for="tilemapOFF">OFF</label>
+
+					<input type="radio" id="tilemapBG1" name="tilemap" value="tilemapBG1" />
+					<label for="tilemapBG1">BG1</label>
+
+					<input type="radio" id="tilemapBG2" name="tilemap" value="tilemapBG2" />
+					<label for="tilemapBG2">BG2</label>
+
+					<input type="radio" id="tilemapBG3" name="tilemap" value="tilemapBG3" />
+					<label for="tilemapBG3">BG3</label>
+
+					<input type="radio" id="tilemapBG4" name="tilemap" value="tilemapBG4" />
+					<label for="tilemapBG4">BG4</label>
+
+					<input type="radio" id="tilemapOBJ" name="tilemap" value="tilemapOBJ" />
+					<label for="tilemapOBJ">OBJ</label>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
